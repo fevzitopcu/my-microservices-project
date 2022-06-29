@@ -35,7 +35,7 @@ pipeline {
       }
 
     post {
-        failure { #daha önce always ti
+        failure {
             echo 'Tear down the Kubernetes Cluster infrastructure'
             sh """
             cd ${WORKSPACE}/infrastructure/qa-k8s-terraform
