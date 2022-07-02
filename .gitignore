@@ -20,7 +20,4 @@ generated/
 #VS Code
 .factorypath
 .project
-.terraform*
-.terraform/*
-*.tfstate
-*password.*
+
