@@ -70,13 +70,13 @@ resource "aws_iam_policy_attachment" "attach_for_worker" {
 
 
 resource "aws_iam_instance_profile" "profile_for_master" {
-  # name  = "profile_for_master"
+  name  = "profile_for_master"
   role = aws_iam_role.role_for_master.name
   
 }
 
 resource "aws_iam_instance_profile" "profile_for_worker" {
-  # name  = "profile_for_worker"
+  name  = "profile_for_worker"
   role = aws_iam_role.role_for_worker.name
 }
 
