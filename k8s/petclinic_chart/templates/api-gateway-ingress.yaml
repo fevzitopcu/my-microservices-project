@@ -16,7 +16,7 @@ spec:
   spec:
   ingressClassName: nginx
   rules:
-    - host: '{{ .values.DNS_NAME }}'
+    - host: '{{ .Values.DNS_NAME }}'
       http:
         paths:
           - backend:
